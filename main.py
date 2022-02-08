@@ -2,5 +2,5 @@ import requests
 
 mainUrl = 'https://playground.learnqa.ru'
 
-response = requests.get(f'{mainUrl}/api/get_text')
-print(response.text)
+response = requests.get(f'{mainUrl}/api/long_redirect')
+print(len(response.history))
